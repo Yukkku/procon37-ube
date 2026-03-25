@@ -1,3 +1,3 @@
-# procon37-ube-public
+# procon37-ube
 
 高専プロコン競技部門 宇部高専チーム (暫定)
