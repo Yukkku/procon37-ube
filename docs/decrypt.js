@@ -125,8 +125,8 @@
   /** @param {string} s */
   const text2arr = s => new Int32Array(Uint8Array.from(atob(s.replaceAll('-', '+').replaceAll('_', '/')), x => x.charCodeAt(0)).buffer);
 
-  const token = localStorage.getItem('token') ?? new URL(location.href).searchParams.get('token');
-  if (token === null || !/^[0-9A-Za-z_-]{43}$/.test(token)) {
+  const token = localStorage.getItem('token');
+  if (token === null) {
     main.innerHTML += failureDialog;
     return;
   }
@@ -150,11 +150,6 @@
     keyu64[0] += 1n;
   }
   const plain = new TextDecoder().decode(pl.buffer);
-  if (/ {32}$/.test(plain)) {
-    main.innerHTML += successDialog;
-    main.innerHTML += plain;
-    localStorage.setItem('token', token);
-  } else {
-    main.innerHTML += failureDialog;
-  }
+  main.innerHTML += successDialog;
+  main.innerHTML += plain;
 })();
