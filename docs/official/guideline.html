@@ -1,0 +1,238 @@
+<!DOCTYPE HTML>
+<html lang="ja" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>募集要項 - 第37回高専プロコン開発記</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../css/general-2459343d.css">
+        <link rel="stylesheet" href="../css/chrome-ae938929.css">
+        <link rel="stylesheet" href="../css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "../searchindex-46ad2fb6.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc-2c928493.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">第37回高専プロコン開発記</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="募集要項"><a class="header" href="#募集要項">募集要項</a></h1>
+<script>window.cip={salt:'QdYRvzDPkerOWsG1JJ5Hjr92mBmP6_bsQwmU0HvFYL4',cipher:'uzXorfK5pBVrSuh-YvCY5nEMm1jmT3X1WDZ8I_StWimfEBhsunA18VwJovc_arw2SPjbbSiNtF456fqWeRIxUWJ0hQtbafR-gia3e7UxdD8IE_DPtR-yv7f5LJuXf-WsppAfr2G5ZPavaBg-vYrbrirEew8zCwKGd5p3mB869zHFkhxUWJjJ3OBdtOcYJkhFa4zrPREGn7Ikr_szHwHGEO7kTCZjVNwqZ-eT6JSWTm0SCam5OHDZdPkNmENGGqCxGPnE6Ys9BgGOZkPrbBULd0ue873wuskEGAW3zblsGzswZ77CHWPiZw8ryt8B98P9ViHWJ6STGZ573OhpVCZmQnR7dxU0BLKctuf7dy8_m2oHVfIy5nUFQ71ckiNN6pTNfqUiwdJnWe1i3ONPS1V8wBqdcW1bR_3HqRMzpT_iz7lonCO5G7Buz68aomIsuaGSeoqzopwmMLMxBKJGiqzHLWjpCxQ1-jTquY_qlwRYa-dVRr39J-KQHgxKzD11PCdMLhOGKeLerZH6jAVGgkrHUj1YxfOZ8oMXmE5tZxAit9fDp7xa3Hjh6u1rw20uV2ORGcpX54PQHhr26cp-mU7BYChM_JCEieUNTybRgWMqv1TQagw0i7yybp8OLYq3I9eCbBl1QRoLvPHudFYrNnZEVhzoPwb2uPTmHPgzutR45MwHmXpRvjPMvyFZiWpkLrvj9fa7YhSEB9VUzL6noLGAThMoEC3oy7VLUHrb56JX3f4TNUSbN_bnirX41NrlNro_3kZa0kSWJfq7qC9pqdCEF3LDJWi4QAgIOmMWYwVmnDIaX8r5GE3l5OWWY_oaw4lyCvG5zq5vKWC462-Hn_PsoDpE3u0ntM07ojjcEs4ytrI3BtFd9I6DlsE-Zd20yd0hxmCPkAcMjgMoM8SgGPp6NvDELU8C43XN1Q0_BOQFb7l93h9ZPm__MHDOdyHjBdkkAvFIOQ-oE2vrotNkxJBaM44OYDxnvoFrBk6WM4VQHJ5Jc9Qtj53MC_B1AbjVkLQDbak5ychkUSpfY8oI9CM0uovc75ElzLwwQJThwlkjJfO32qwFaH7veYWhiLqwAc_zw0r1lKWXsUg7Sp8WPb-DD711dStMW2zAjb6Ag5Y0RKvh0-XC1AGuBuf8Db9NdRSWh2lJ29DDuHAEUNDiy03jwT_I5PS_-eYPitUqOlqhBMoDUC3e4u-iy49vzs2M8xfIcyzRAPONQ02u1N8kzfiODGBHnu9g-MUVX0WEFYj8cOEBqwAY5-B6Igr6UsdbSrl9TjTBRV1hr2HrSIcJSrDT2QSMDwehkAiu_zRE3_PPviHERl6EpyAov12Z1BO0TKsGARG0YjZljHzUUs5cX3pk_2Kh7QuHFMCfxlZFZL6LS8KMgXRQqieHaDXyNhBNEvDxG-RFA0CaC3PO8pZ_2LrG_ehHEu_0vtcR4lqHlJe7NT0PEBwPU9x1j4yrWzScagc0e9k9d6QJKnOGu2fqODIyZrgR0_8w1Vori1kS9W00dreBFVVM5KVLIrsznm5KoKe5LBEeBGYvSVeoIqNl3-g8TB4NZMWEWS1WfJbHvzd4G07tHBnEjRgn_bg0Rtec0QzlDqP9cS0oK56DUhp-sPWUaBkXj4zBjE7lZmp2vVtiaQ1cPpXVtvM4dqlV_9dUrpLoC395JDssFkk15syQFd6GrFh2YdU_JWXTNC8wqL-gl949mMpEIak9pfsk8KxxTisWhNkdN4jXi8Hm7Vwu6SEN8OXVZq7Zc0-kGOk_oU_7NyrnuIgcxqp6Slxoxl7CGwlC3OF_ADKOokdBBzv0RWQKSktkNDBvulpm15wNx9O_Bs5bbmgbkLs8LCZyeYVKHTzTzu__163pVoZxj4TypDPe0e5yVZ4qGYgZjbhQx2o0qf8aT6wH3TY_vwEn-jC4stLhVuf0ZXMmZTfd_eImWNPi8QHZzAvZb0sAPReBCaWUBNzDR9HNq2H4TCbroV9xHwfQ_D3SDfx4XYXJtcheR8XF6jEd5u4BO8w4xjc_rHS9OpADzuiuNSrhD_G42AB4ClXqjoQYo4mKAJ8VSFJGNKaiIsRKlK4wY0umqbnpHK7OKyWUKuKfc2QekbgWvJvQWpBjYLs9j56fKefBcjIfzy719GjmSS0_naT26UdzdN67VkmgadAqzLtHC5v0drNQYtWfABAh6GJJyvdUT2kEB2IFtALh8FVoGgLQRglc16_IovN9onqdZ8VlIcBrBENFeIQWfEVqYI0TyVhelJHRDwljI9gFmjeBhOjYx1_4T-bJjMZ4Q5KZe4pE6lKhYnocJxdoNQanR5V3qm9jyfAztwM2s-Y34kVq7H57qFxmPxSx_XSZDH8yoIiIr0miAG1DE1mUgUyw1srLn6sscmksWpwfpDRrhOqzKuniU1xggJSm1AMlWnR22-pMR_jYRKLWHRihVbPrscGzvkgKNrF5HVv6PpzjePQZFFdcNXoYeC3wXEphX1U5UZpj7RTMVXHGkIrdlBAObU5CFdMNER3-Eo6Oo3i1LWm_I6XuCGCBn-0YbAzpl_4cvlrh0UMcD1mWU8EcYI6KCu6WG0TjI0wsVHp6FTgjssd1SyX7OQxBG8-wnGzwpSWD8l89UHBvlMzqeddSyXpznBXqRV6L8MsojYBdiMwwabGXNkk63pIN-kiFe6ds2bxLlldw9IGgufITgXNDvVa66H-9oOu5axGoLatqnB44t23VmT4ICTuYVi8H9V5UKc9K4LtD7XHfLQURSWO58j_cW56P4lix5kk4DmjRIxeqRtIe4a_dnZnFOadKDMQ5XrMmK8YYtIt66lx2oGv7fI2VFpBMj0aXUrZH_PKnl718m5qZORC7VSIEcZRHocr9rl6EPRWKmrHaLL52Jh4nzUqI09mDyh0QutH9qcchrH4CTeFeoBQgPteErRK9ZAYRJm-iu6bQqyLnr3KbuDDcahX-4SDRWEZFfJtAOUpirg2VgPAFmrysCrMrPt4p_cLzoH4zrLNCm4EMiWplP9tW1sT4g9M22Oo8uFwU8uMcf8Q3BzvPq2mU_SysB8uNqAo6DbBxVVFvZOoxnj-M4YKts90_a7jZlzo4UTWiyGActBc7a-0V98GxB7tOHV-1CzxEBfUSEz1nxiO9f8ZFh3c0oOzgedgkAd_qS2CMYRgSNu236EBw4X6-FI9o16I9UaIgOuIzVRqFziB7KGPjDJ3HvY--K_krkWKstoR9Saap0KPM8LGm98NOjgjAtjSC4rjPs_uYRi6rUAEu0m-IZsMTgCuO-4lgoyLlYbmlRXmBzXRGUmOt2ZC2GyJgqt1-H9As5O8H9fNwHInZvxOewoofzjFmsG13QQhIW0qeosSUdIaWkpW07-U63ywWFaQOpoRswGEnHetLoUbTwneYzjuwY0fMEY0r0acg0kihiNnK9OZP9v2v4qX5Yt9srDFDfDsuVBShfg6LoS8DFbNcWqX1ZvRrIBvh-YmeainrRC-t-g4kVwuzOucm_ZC-RBbhLHKxGGH4Pkllh72QcF3fZiyj4F5fsNvxB8ROngYfNacY2VppnjkbMgK4OVqDiMqKMW9WDPt2aGCnWRnAGM-Y-6BixzMPf_zyWGlJaoCpXCXLKhaNy1tLmkbQ5r906LTXLkZZhDliWh9ZIDN30bewcnTDVGEopMOeYAuTX0jaB893zueZCGJBvySzfH_vcdNDuuCCEknkVj2eZIiyslBrm8mOEsgQrw-bO0oHs2LCYiRJRdSb-FK3iM8q-E1RIHI9VfTxya5QDZM0LLCwoEs8yjIK9XgXunmxZIzw-BS_VQ_-BC6qDDUamYRdlEQ2CrJs6i_2P-7zKQYZShy5iia7yUw8G9ByYSrzjuacvHZsYodt_ja1QTxVUs0zkhSkYYKUwhcij59a8JlV8jUwA8Opbeh370Qj2FbyhOlAh0uad9XV8rt8r3co2zCiUKGb7uatPu_a4q4QhVHG8SPsn-o-CV1EJpuux9uQdqpPW7OkLcQ_K4dt2cvtNDmxWOBs5P88ZO2Qp-RGe2b1UtvVCExmRh8hMq9sFyLzCmJNoCnAU9MkR8Rax8-n3LAk13c5BnrTevUw8lFh5OWKsmJMtyq2dC46n8wliYua24e-lvjseWsSOZskQKB5fqXFCg5Lie7JwXWILIK8XRQu9aKTvWaw0lgvUg7gn33urw1VOkl_x0ZNhol7bHytuS7HibYQWD6tD_6jEjPE4qfQb3YGA3olI4NH8q-ZWE_5vOD1AKSV7joQfcKpBMeF-XMjDCmZT2JEO_F6lcMDKPT0roXhzdLICitcv6BpxnreVvLNoj3U3UzbcEY40Z8FuQfjLo5Pd_TlZKBj9xFAUkMM3JDwMw-Su6QZOBAfnSO0YGu67qep7nhIMFPMidDnG3nrZE_uWjFnRN8uBu2OYurc3P_lqfskWsTHIR2jNAX1pri7TxRJqFefYuxaqYmwphaD46pvU8iwi2XonePBS-w44OmeCLGQkd9215fascJuFF046AmpDDfCFibnvRAbGgA-vGD56T3pQ1wwxIEIVGi1KtFOAA3uHR0o7hcQycWhP5F061VzujzqnrLt1i-dsfFCav-BKb0rpfChTzMOnmTX46F6rIjeGUN4-W1ldwQ2tfAJLzEzwWdxRIdHUOx_GEXlivjiu56Dq17BWwrBbkuP7FDfCrBvM_HpHpdUpNJ7w2tZdJzK9G4neYOpqXylW9vR4P5wwY6t2YVIsDa8bZuj5Ek_d-E7us-fEQKwqhrlyKkXEhy624kuK34nAcMHExqzJAhLTVWOS0CT0c97WoXZiLR7ljdpaLLNLyLZsP8t1OAfAcRsRkiEQ5c9QuKFpG8OlxU2wiDxIIO-wlDQXDdwAvLTkWqZnGN2Lmwso_LccEu0cETaBWkiZYZUCaHS6EBDf8WlVQEoAkGwdLOtTN5lZLuHE151aC_znK6a-967s-ZVXMQeUhNL7B2kf0nljhwLZWQW_Pn_hIQsafeJDGV3eM4iUf0XpIHk42h-9OpUIhYsYALO-CWfk6tqmJp8eLjYXnORBw1IAZT0-9zu8Bb7M7ugQrBtH_byObXdRuBNx1XyJ8DOPX8MKMc8-q264MIZpAYREfRgPQS-UKYxYsyo-Mc59C1PtOSLSiZgdstjAvaEPu6sC9W-6y_aL1ZIzRGrvOA02URyI46MfsIMcYwGlLR0VRr45JdC4v1iJ_Ug-QcMv3evqOicLR1vHIKA4Y6im23VyxcmwDJpCeilmFnKRFmZE2gGU8bVcnR46biuxz4mxLTuudwk_W2acABsCTgAF6im0l53sZpi9IkGv3Jyyh68a296EDwSEcb8SHKH3ecHU-z0gGOcYFvH2PQZZ1Y30rWp07sl3RMoCLy68srzGCzjIoM9T2kRz43xXNJt_HbLaeGFpHppEHBp_0NbXihHG7A3G8qpmJitOXQC6qUqSz99bakMK8nQnfaePXYj4FWu4DZAQOODBqmcsL8OQwaJL3QFgW9Ch008kyf1I58kZyXblWEr7CCUkatwt9vidjloTxRk3ex4UysEjFRIgiyaVo3E68vVxc8O9vj_qVEaDRHVKEXMdqegSCF55MdG8ZuOZLmumGMqT-eSnIm3VkB5DOxp0VW4Dm1zTCg5nMUaezncYOcHGll6d4Hc-0d54KPxtsOpEE7evWZQQ35Hg5ZjbrdpayBpA9dWDK53MwfEj7f9drJi1-PEyN5ovzHoY5AjAlJiIEb_-cVvdfuxnAMwwUv0_wQCDTAsQicr5mLuAhnGANAPOp9_HEkX3S8cqvPZfwRE1yPOFwCxUrgk0rvcNi3bp3tHUFcmw7SPUxWVb40GqkM9P54M5PUE5-duTa9Bjifc4HH3WtzYI74LQs2NNj5ZEcElTR8e67pE9_SV6-1M9bnBT1KoKRXtngAvC3O4UGDEQzyvAGmnitLeg_zhiiCFINY8o6EVvde5OgdTD8rrnaUx2EPAmLyZWmLjSjZSYR53xzhqkRlPEqS7teHHbedjjPQJvE86K6y3XWX2XL0c_c0KulhxvnkbrKgdI20DvESLgtChVoi75rffnmOQoFy9rc58Zpdl3COnjWx94B_hkMn0pxfEeHa1R3zvCVIRm_2reD1b1zoy-feWhAiVtR0JcJlQyEl3DAl8SCbUYXDCi_PhVUmdKU5x9Cw-2f4y_YHhgPf2BIbGVTZiedfTXllmqX_rPsaLejNhQjb3ByTig0KJ7XPxWAiv-2UkeAbfM1DiwijpzSjWWj7LNMEatrXufb8Jrfzo02oD7WTqLKHv6_lfiPndWYOTCx1Ld0Ev1h1hdemQAF0SsJCgKRdz-dk5JE-izIwvRcU3vs9lxFBwE9zwm8RkhLoF5SMYQ_eMsZFaHLCmYas8jNwKPj7uAtSwrCO9VTHVK5d_r79o_mrSvocM9XRMzYxl-GSUvRZrSDxT2J6hPhARFpdz0X14y80TXFfpBUzcPkZR1Rhi1kzAicBR-HrfyeHcrzLok0-b9GBippD0uNqu_BDzdeyfSMDWiYTc8Xaai1krxJMuduv1D_MUoN8WBsZhKgm2nduZFI9ZbciFfA_b0SfRd-gM7wU67CYkVauOON0D7WnWeSOPNwf7V7Li6fvl_2EALvF_eaaRSO5r4NOziCdhi_R29RaGU43L1TWWu2JnybXeUbOZZUMahu65vH_u8iwHDOlAydiAH9_IGYe0YzeEyws-SriV-WZvZ4xgbT5RkgFyqfYDKqld9lP3oPrcBftt6P86TBb0szx6nHrEX6Lgg8NPsyDgHlJSMxi-GNj7b1B4Lbh5K5TI3epe5ynY34o6U6vGGZfHNT5cO2Uqvp8akoWr1zjb6GZYMH2sgx5qfgiyzwPlzQKlxGrOFsD-1kpANDpILfzgWTZ-3OuwoAS_tARjqMyUBA0xLZ0CsNALJNIdgbUyyf3mLfxen51wqB9dZS-uEaEm1-YoMWtmrlyCMF7RI4xkc8BQksfqL-R2CrAiaJ2MYqbZvK-3eDnX04Gqs5tH9qdmPvUrdm3qNwsBesbfrryGSli2qdYRkrPU3pq4vhAT6UFAtBy2fxMikhbyeaWy0fFYg0s98wIEi2h_J6zhesGdqMQuCDRuoZbwRwUxfs4CkGWpUNzQ12qmglfQaKnwOBH-g8eTCWmFSmvHwKJ3OTusz0yElZWA5mdbwWvKBih1Sbh1hbf2g3-xW3G8qezyNijriPmxJI9vit6rgZ8158GtIgAVinsK_7i_BRcrLFlFCsOUc6rpD9irzGL8rHapDXhILPe4IoBHlBJO1qc4J3ZdhUedOs8rzT1iZcGotumoa9xbzh_r0fcLW-2CRtBnRpgH-Y9z63NcRGi5rnh_K4m5QeQZtRQjfjgOmKAwW75cWq3f8ATe9Q5ukFwkDBPmSYYaebyaiCSPGT7im3B8n1h9phjSyGnbFS4Vb81DoFlDBGip8UiERWe1i5qfX4K_rP8AbGkcBxCY-_q1-okokAlM4qfEQxF9cj-ba4dZ4BTUAhwysM4JB7XARNUlUTmhZ5ieQiNUqLPc5udXdSOoGYAS1zhcN-ErUKK6uzhq8ZVT2GSXmroMY_Uu6I2oMRon7f-EjgsBrbSnciKGO4FZeV6H5smTi5sB5jKm50ZTnmFmkh4A-WZYh6S5xeMAgBCLBW-Zw_CwyOuUEJeiyW5E9QfZ92E1ts6iQNZ0AnLbki1bE0qoMORkMq9EOnjp3mCKM-jZodh-Nf8-KPc6QqKHpuWz6eDXHnHo0bRuvDouiXk9jYk6YEkQ5ROnfG6EjbWZaCzW7v8fhI0zWzIYgG66fjcF_qpXu2vXSi6BTTQ35l3IJ3402eOd7OGSDivdP-DlPNik73F_nO0sEzWy9CZYfubbdo8MGZAnMM3Vldhz1WgfRTiS6eX3SUCB0m4HeM8KKFibLYzEvZ1tgHxcx9hQmNMvOwJhNkBN_HjEKpzaeXd_RvCDTn3AQ5Q8UtupzB3cAZN2WZWKZk3EgSeMJoR4PnojG_X2W4V46C1gGmXrRiodcBd0jwfahqbTPLDMbGZBLlx_7lZzbtnqHSU_qpIagaMCtV2dUM5R1iz_akvIKIXnVSXKF4DyT54DYUEwsEoO2BXpKicmyF3YRZml55J_IR5UwsicMr0km6EEVXMQ_2SVREoiZ_0_ZUWt733-Qmh6UZ5aKPhuzLHGh6MQnCo9PWoDC-K6DYWZQolB_48geV9CAjM7hj3v1LyA9yJL2lfgCZ8Yk87CsrpCTNg4x8mAYHRgqordbObZxoALTihG6EXmrtuB5_NDGDzyUUd5DN9UGgqKarRSsAM4gr358Ekn7_LAkevs6QoCUF0WCppaWpSJ8bh7Fbup9XaHg0PwV0oMnWBcRWOeeQ0dKCCY01w69VLsMtevWIS8LG9QSj-v4EQA5Gu-mbrTx1fMF2KyKkZoSG5M86VOnzlA1f4VHrmiBQIRik4edGqu_qRWcaofWCKVIHQCxy41QEzRnFWJHdtjDzZ-ewgTIpE5ibl3UhhRa7ribcdnc-OwMgDp60rySRBRsn2-6KX1KL1rLQJ6aVdaAMQNNgQ65nhhx_JDEQIF1uOlQvYKG7TmPvQbzdOit5Gq2JYkrCps8dszlaJ_a4AUwP4i7wnqeUht3rqgdIUEG-6GFBG0yJQ4qIQSX1egW2imW-PSM3OvRqb78OIegktVqP2-ksxSqXVs4xm1lfQGwJLMKfxis5HfkqbZmbgLReCnYdQk-m3SFrLGXOc5tj1cxeHyLTPoMTv4oYm_Sr2kz9Ptm9jJ5anTGv8OwdvbuP6kfFdQERx0ek7n_nvsSnjgv1rNJHZFXR8OBgO0pJg1a8l_sZ60nuN21H43JG0tYTrHmDLgQapNzFYM64WFrHv1ZCApWzRkEDNEwUp6TOz91Dpn_JvSJmW35jXFXPFVJBiZ0IZtzqAKYoLCQkwkVaN_Dh2F9g4Ar4ZIkYpIfHo5Ys1L-Sl7aETHbm5kVMvdfgmySO1vtO7-0Ag7Oo6dnbtmL7PYu5vgSdeiSa_7TyvI-QNKAmLiZ4v5vi3uEbkDLiNOIQGzyVvUalDya9AjHGu_LfcU_AIxn1wkNxp-rqIhl2OjMq_MhrwYY-XrIYhJGicwkQROe5frr0dSMIdvz-liPyAmnSOmNyxCGFNt6ZysKZ7CDYkI5ka8j5XEOC0DO0a8KRwWFgSuwysvZRrRvzD8o96rNIe09aLtA81zEdocuSUwVemOWnTDlv86Emehzt5k011Eztet6lp5TbGfjUB4of588t6hmoIMtgM807Rek5l5Q1xuvOtXwiEaUe5y7ByIbZntbEciGE2z3caTDIGceQEqe56gsCWPjWpvzcPWCZ30GcjLkfOdFxfB85_G9kkoiWafFiPLVev2Yc9UUbYB0RTqa2PoS-yFVMBzKzL_NMqkBzUqgyssL0SN6rD3872l1JyhjsIQbmZPt_pnq1NoD2J_WfNqOiYdxM5Ziy2423FoyiGPPG5suOOEihtPUoPEhIEEcxjG7-jSv_uqSDs_qB816N9CH-J2iblqzFGM6MZQb6-nvVRGuGpQ7BYQZhg5ROSofMsPnntSCcUjnjUAgxd4Ajr1PUHjCG3LJcuIi2zCD1igt9R2t_VhycIvQUZB4O-pYILFTUgWR0Hhu9M-KTN6D-9b0OqiA2d08S5V9Ik73lHOcJXxHv3SuxO9rmk4TURCkPgzOsDX4yaW7jDtek91d3hD6n78IAludT3KRCqokBeYBcmNcKol9-5ZOdVQd89-3Ehh1bmYC2cuT8Di_BUDGURuIpUZXRuNJnuDT_hlSuica21kfvJvA1VyFKMzdrG-qimaT7JQy9VwruHnOe6cA_YdLPyTy5vt8SYLBEnEvRi-BlR26hUQ4_ezOfQdiv7h7H9S7CkUOr-_hiZyegUqmQ3_syT3q2Pl155erKtzhXVkPSz8p0gM9qNEXXWNgGcW8AKV9d0PIdwxdcmHycUHEY1UdWqPHlIUXO6yJDZ_rqPlqs6wQAKZiqwmtTZ1MbB3b1wEyqaOT43khMVbn-_r3GCwY7dCsIPZCtuVbSWb0B-H75iW0f-DUE0UeRGuCaXR5mAAI5VUr30QIj4q9UI0GSBMm8yWLiZS9KUEl8IssGc_ZiBx8BOZUG_ySFH_n5x8hQqFnwXTuRxArbw1jpKqn7jG2JDN1unM9ZK-e8BlfrApsNaYSXyWMZ1RM-KgU0RutvafqvJbKjrRzUKpFwV2BlOB4Dg1teKL7NqhbdDlyFshIZUxNj8FFK5CzE1daXOleJqv-c8k4j_Bm3X0BA6Br2-P4RLJT0m15klgh5T2xwZ4sofRIf-BSvGbQkVa2lEHngbF6lMFKl8hUTl-JX0a91WkNbojSvw0dUaBautG_2m5KaXHQ3khIdJXh0ozI9RfliyicCkPOP8GY-ru8pml9F2-pxHGUeH8CSWJe27Yn93ZIOuKYTYhDNKjuiKe7CchIktuNjAD2i_LKJ8qRs7gPS6ybd-Jc9A6eScddQKK_vv8OTw0DOALVl8Ljcjt4ateDkKuJXyKLIE12PoeN_AtG2t7wmFbqxIb50mtpgVvAV-qfqZOhRWhLrwTnFyGk--k1-uZp3cri3ki6e96229zXvlOS8UvTvSpfZg8KD3eT52Hy0QlFr5APtnS6lBONMdY_WUbCgtTINIxxZ9AfdVwpx0aELlqV0TksMExUp2gdWi06kHeSwKMPY_S-Rsg90mvS6xhH98x2RBcqiH6TTTYalW_9n_GHWMDUv8NZ-oUfQVlVmJ8SzSKVIiFevO1HQVzk1V8Em4mkzuVCQ3c6_jALb12jxh6Rc19MeqbABg945R6RoRC4N-0JcF42H3GSOG0rTBpFCcbsu-V-aJMKNyHTr9Zwrx4O0zqqH389LnqBa3rm2UXZGbbfPexyI9wRAbDXQFPnaG9aF0qr2bzVXEmlVoW47s4g5pjNq0EGTUeeqgiJS-9zdxmtALjLaACOYCt-uCkRfJMhbFUIP7YRTs3WBa2NddBTD5tH0Yl92vFe9ruRrJpteRgUhjJ_toFf0TUduyHcHd7OpMgnjOahHGaIK4Ds8qNzlc8Vk6w0zvYAPUG0o7d3x7l0Yy-arQfLmSwV2dPFCsZSndSoIMSYNGTY0pMFQDnGoNmYrdQqQRt4ldfquTGAZm52m1MKlznnZaI8VTxNzoOVWXa6mf67nKuQAVfpets5ysltYcCgbr2IC45xIrmPT8r1wn7qbDjuKV2eTP4so2WeheoxhcsDD-pWxHOFyJn2L0hqBCDqUMM94Hod2L2QDj1D-5ASzu0PwEm5caB8uU_KWArqY5NVHNQfPGXovjMhHqvU85xwprbs8WkPnEB2_gfYcf5LpHAloBXCv9n8B9od7fZfyZccHO6SGESPamcWtsA3ryS6G8GwmyhyNuFi5mpbVhWkKOuJU0t2R8pWNUcY4rvD8j40Y0t24s6N2vSlTuv_aGkYfoqPFKYYuzXYA6QKE67Hj9ET5Csdvwzl4jC9rUSsKF5IooXODi3RrywMtBdrx6La8rQg6tu_ImO9ZSVZyvueDSJqbEdjiDDV28pZCzmln-7I8HRrr3UAJ-mBwdA2f-pwGcvFmhEYc8c69lYv8WFor0Lx4MHgB7a4yrmmpRLZ3Q0iqRsMTbEHgD7cAaEKnvsnoCMas0GR4QR7Yn-Wp_5t8OeWg-C_wdW4cCP-QeSOp-p3jL3SCLRZoukqdCl3lDOHlwqn0SvR7kSlR7TAtLjQPN0PCgxR4KOz8xxGApdDUakA4lCIMNDyX3plorxHP8YOvvrYKt_R03i5MBx4UvxLo9wDIT0AtkcGVzPUy-_YWypl_ex3OO6lN0iUUehyoy9BErgeI1CPgwXFID8z0BEq2Ceb-bNICyLn1PId8xWJVOexMCntkWqPbXq76DpafzDzVIfeE_YqzAnH889n9D4UD7ieI_s9N1b8tuI1IAsN63hGy8PVMCEe59RixYtcVKcOMcL7pIxU-c41fMmqYQkvloPliwvVb81LwngDtrWpXyjUrJnC17OolxiSoWk1idYsMCeWnStpvpJyLVPwcVVhM1qJrETCU8PhMOh6GCgpEUbg9r7uNsct3pI8Q-GGOIFxnfWzcUaOq5JN27IF58H0ZlwT-t5IZQP5DQrMiTX5K6sKBT6h2JjT7Nd3DVwT6G75smYf-nXdV68D9YwEYP_7daAge9GeLuQCfRRGqYsz9v5AKx4Q8j5U9UpnEe2fwqveLMTWkVP4CWJt0hcBdYm7K6oEJC_YiK9lm2fYTE51DKuez96WoWMm-yT2-DUTEdeDz5FcuIv3w2XyaF8faZmYSyiSsaxkDq2WwUGaF7ow7t8kORzXffDn2qjtgvdAVRMzeGfUz7fLV7qmAuLTtgQaxzw5RjXuV4O-khKIT8La6Cx3aXr5gZX9DIOKtbJjTotxneWLlc69Ud4ZeoxCVFHJFGU8lVU7N1-msHxAlnVR7oEJPD1qM6_vr-R1QXNleH4ZQ1t_tYJimjNF3GKjXflI3wrMlEX2-cQIynAkwJrIQyM44EmEO_L-T8fdOu1TPecGw8L74dNzAqecSk1LN9XEWSbtmjxoO78JfBzYLCAhkcj6_i_HWydnVLpr20VoaoRzrUp5p5DIRuQa1VqMkLnxvCg4WGus4dUXebZlVtJnB3N-RuqTowBKaSTOTnlFyR-MCsZFA25DIo6HFtb1rRmodweshBXl66bkpfy6R30XhvzcBxVyfHgbNqivKbyU7-dfqSiW3c6o6uOfHo4ieAYSws3OIYuA1w0bhT-3johd4oIWtLZfZGFixwEs6ZNDpZFGml20bVCPQaEQnXoTBQsf-EHl5h7ccxOD_PVRHZHYwvrBWFELPHa1o9CvGDBuRfcK0e7Mt_oeXm4va9LRCh3QpC28H43_oLBBR0jO8oD8CxT6TeLOin-5hAu9ABohNqPvIPEM-NXFg4kG8PpXiRYW1oYPZ5_2S3eCJK47FRKR-uP8ak_DebAIVLJQZpk7QO_1s46Pwi5bJUX7KKtpGbFbqCEDEmtcOGtLklm3pm3fBguJUc-9vQdi5VPOCUHd6Atoz5njkMGQQMztkuL6as2t4nirUDUQAnoeJ4y8KWqrzytjXmKky1aXLTsiS2x32ujbRfBkrOgtB6KIbuPCkLlj-H3sn3I-mDfduDmcdjpJNhFOiKoTHJ-OiJBrHWvegDwweNggvLjedbZH5jFGYOiFiuSnR3tVWUCp-ZeDT0bon3fSL8FX2i9r2Ie7lL2d8HZo0XUCwupvdH2yXApPSb73fYpoQECCE81-EKFSzDWHKx6Np0QU1WBwz1uKk614QwRCz6Fh_2y9AeqEh6RHMiVA_ppRwE4T07ovL1VJXS6TnwxWvK64_u3Luw3OfybpU3EAmpUhF8rjyRuQOI_DVXY61_8WAYCt3r9tluvDdrpcNQD4_BVjDvCQ81Wo7cVZFm6rQE9UASqQr4vSzsSj3rRryNTkkROsB696H8fSFamWSWJYvX9fw2SH1KReumsxvmVOlJe4C8Y5kLECU1j7zLuBBc9o8uGnEWPUGtPl128q98GiJ5_Kdnk7QcZKajPhTSyuKEmR529Z7igcEiUT3P6A7BD7rTooRpB-hs32ZNaf9_TYGudIgfj6fF-j1xLNgbY_8ddUUVqpiD0sM8bRIx8kVyOufbxHopuDbKFk2tr82sSZeeYUsE92AC6kbeyjKB39eoJFAs3S2e0pWdwK4RGsaVDk5X5AQOi4QEENXFsvx0GVNP-aJdysYm2LZH5X85Kxjww8Z0KzKuyK7YDX-rQXD_BiCJhzm0s43kOjQkVU3bFdRIqz3vt8-vvKqBxJ4dTSzG--t8lqSjOyfeoD7gghtRHG8ZZMSxurnsvaSQr2E4ksn51W0CF_WI4lPs2HdD_KO2fELMDOCzpf19E4q9EYvgDGZvYSiP8_prlrnNJb17AgCZLsxF8XXL768PkGC6irsI_IIHkaIjIwN_cuX7dlyPROVsbZxy-gtoZ_gWMcJ2-75DUiTyQAWsS5rRFimm4eWHHtM3Tiu-8KpgXtwjmqOF7LetVqOotoqL8nUE5TGW4dzuQznzbkOTfm8b6yhjjmFcOqpXtKbXunr5ukYbrae-_mxcfToXwaFYujM13U5WxIICx4kvhfW0AMwvPYVLVa7hmhdP_1sgnLDD9_ENx_NKnDyZZQoHmftjmeoqQNuPSpNITA0CXOgw3EdWMp3Vfog3FWEB5NbaAt3uuUbO0Jl8OdtW9v52wb2bUKekVj_rNtIoZeZYvhXNayFgWGs3MAntWnham3ueWmIguDYWTrIV15PXSVPvb0TEo2dzpEJAk7En-DOL0iTp0lXcx9RQX0VFsF1vxsdfZqZIYW2V8PgZu-LnxA7fYrX48q_yTyqUfcDHbtXcxcrNxJy_jmYNtYHMQI7OP3B_7xC7O7eVtl6gmtJOv8WFM_EE1Na6EEzV_7iDHb_EEBEZu3dCFVchMZXm1bsnaRYbHa99h_wvxCVDwOfzFH7jyHnCficgwSxOeIRizgvqU8MYjxev9CmXvVpzBKbKerhMMA32TnT_0fbtxN_iijnIK0IE51utDQHIo6G8CYFAgacI34EeQi3XvV35pcI5dmzcfw4nzkWKrV8QwAzf7Gy5CnqLnO4MJDDIu5AEcwsN7J-nyQbvzVyDcmG2nTKE9kB9s-t1pRvmf3Fh3qlXhvUi1RROhbLiCCN20cx1qqe-bjT-s_02GyL_thFg1bI0LIWy78_hjXDtJQSQjh_jY_x0gAfW7qhoKq_v_0RRTLXIK7hWDRYATSMQl-zxnuWvaTrQi6-6bV9-zL7jPKge95jhP-KTAsn1_O3GDCy1d5ECHJDZd2qGTp7TFJTaMxpRXuNFT9TV9SeV3J-n6T_jP55lU-Dcx9v3jASkohMQaLM1ALCEK6rRihAgj0T5ghUpgW8ThzreR_s7IU9McxbESP7PUEOnG9D1VkUZwrbNq8jOSaacyOxAnKB49mLgkJGai0izTogEBfGFaj9_zupIx__ff2u6ye6pH232fRnMS4ulgFBryEkBHoIASPJiM-HIM1zzPl19v2LsxxfX2fLzEkimMnTLmeZC8WKjxnsW3n9JqK-g6JQiKP5HND0jKLuLbK7_w6USkc6ulbkYyI4VoQjZQmwEUeyBQt1iM0354XHiFiYPASZWyw7VNKFhWnenJSKmyNrEN0CLst6UiOfZ4du8sKzd9tKQBKQ-wIPiuCsJyqdVUmQ_nNTH251uUSu-UO6I1MORJ9JbVfz35S5WhsIn7d6KubosHH_0PHpXcnlOR9LNa4hmbtOY3oTMuchItHxCIDjHruqnF50WpVB09Y2J7ycaaFx6r0o46dOl0g-cqhFuWtlLs3DC33d4ns1VsR1eBB0FpV0fPa42QReUkEnwOrikMxrfWNiLotsDbnIh0b61X2oNjFGN2Nynj4D8PsOIl5AOgFmzuv8RL34XxxitTLSbfWhVc3cIS8VNXixMxh5-ypiXCdYQmEtMpnlMMi_3_aPkaaTUNAe98pWRwKbLkE52CJwfnA3nbStjE9TXjZOLHLQjPje4H9zSwNhttjYClVAVrUWyo7Y-7CvIcUzRHy4gnpUZlO3RYSy8YFZE8cWV7IBp7q2zUE2FfPQvJHcw2NJQtm3dnHSv1cKniTz3sx4T8kR9vsnNRZus-7LI2YV6wpg_5gejI415BtaDSdkc2lVs9-vK_HTfjeBHeEPEFpeHDfxUFzZQuV0UA2fXSlykXIJ8be9OXK1qUTuJRPJ90qdfOg7Hn7W6Dbd18lbkYXeNadGFfkdaOtJREQg1bMoZxrJ46t-9nCypn9cGFOlxDXULItnrXCoMNGxMTEfUFqvum8LPmZH-AuwVC8eHD2kLjnkgXHhxBpFOkG7uoMi9Ej7yA41XHuEPRyZjTfs9vw4Z-bSRZQe9e70Vw_e4V-NogKNCJhUI6g2gHeYesdsGwFyWs1DqlJrAkcPykUz2pJzPTzS3w6X_NrIpKodGG5AhYosmdBMG5DVhPaq6UJUljzpHlzSoZz1-ldLsjqOszrh4ztrLESZIfcOApLZMI7BH_V0S_iMvKHiIB3K6jrgS7bNbgNEeEv_lr8iGs_mqYlQYzp0Mb8duKiy47CnPT8YxYfCvwpjIHOfEKYzIGqc0wKPrFL72p41UtT2PfKY9MLX_JHfIJi-i_o9eJH3tHRhOijWFR5xkMAE05a2aLdqO5X_K-3CjkZ6ykZYffB5zYu-zKPtwK17bEUN_EotVQgDpsfULAmZ1TwzhhewKOsDAreChc08uXOHHOmCJn4QLrQq994QEWyBNAw9XIqswA7lJRubMHCU-QgwjlAe3ZvZqe_kUxkPZVr3J4n104CTeAO4GVBU906K61AbIZnAxHm3vvYQLFaYIgnzCJciHY7X76iF2A3W18FfhwOAIoSmYePQ_7MSlOEyPIY-fGoWxxEQPI8tgppO6lf47IcPuyaa1GVCK5LfDE3GFovn8QnUyCEW73J3AS-wr0IhqAU_7flAaFyiCqBX0h_uI88w1upzZnroMFJMBViZXFJ1AMV7xLSgo7aXVkKFCaEhhVykFUzEJWc4d-0gyr4xogmdBnYDU3ybeC1a8Wd7xPrwNrAGAv_CTvkROxiSmXsOLE8RwpgDnH1rlyhA4M8LQAGsG4ZYGDFL3scgDn3J5SnddglNJOWHY1Zuzd8mpBGAEi1Hb-4AncAeUQbgLEqBgpTFfPxpHO8vI8HNd8McWDI0Na_lf5P8XGvDosGi9T-pNaAGOga81yVWVHj9T3UKGKOwsq4_P2qzEyppvqQLqTCWsdT26LjiYb9DVLUPakRTiuGjVOToUDI93LpkQZFuvJ05t5oU9SqfVOUNAo1IBTcXDRtUsIj3sZ-C_dEJrdsPx3TG4aLTtNBMTtPicFnRjHWdNXuadvZGaBZgN-J9DyewinvzJGLK72UG2VlhCInc17XIkOm6Fe448sjxz22xyGspeUaFbbZ9Ihbfe_Ml2sZkBwBH4PjbOecPRHhYjludY6x8GkBkDAmnBFwVTS5yElHH-PDoes77I6CFbmyNoyO1jpqlouR31V4m_Kj5HPkyCr5Q7oc4DILnGVZhUAkpy1C-S7_3o9asDCt_zUti3b6EYmeFPVkEadHdxCXNzWFnE7wqwlufs7N4rhVB_PJAb4AYWt6VJpAK98HuxvqZn4zKrADUfR1qj_h_co8qy3ggHMRSfIiwduyBtaupQWiigRMXaMQX1Nyq0UONkQuWA-GOPPZA1bineqxrXSTfmug4EBAs2ko5NqULzOHcB7a_FGN1dayTEN52ZXqaouATztT9gqE6sPfaMT9ftOAFWSoyviogrqMjMN6iApskRWS-GyGdnEJCj7jqMQTxbnCdQ7dV3Yoltsu_Mz2iXitXF3QKnqMdYYdwRuhl2z0IW6RiF7OJXg9Q9DOaQ6siDS15ufrgTdFSTWtggj9EdJIry1PZRnRslAazyDvogVKHFl8apxsBEl5CnNqt9pz5PIKuKkZnBCPB1eHe7iJcBEcj6fI8KPRreotGYGqQ_hBxyL5Cr-wV7EoF-er0jgntEGW60eXdpeoJMHT1rQojnFQ7ymGpRrSwBAop_8O3H5iZHy08I5cRMH-DW7gMTq3qiVlEV8gxUZS70wdIdwHTmQvw_rjencVsu8KsTGiUNQwygnoxjcbsD-QGmxJgKVmxW-E9oeyh0i33cjGeQhCgUPuEFMYVkmtK8O89azyhm8PP7aIrCdp7o1x5bkRrDKbdXjAkNASyav6xIPrLB2uYtbr3I42y6jnqzbM6s5SehKDwXwuoH-EUOVuirq5QwH6pmDP28j7cIhlg79nyzChKYHSXmezUAuFgiM1kcMLFhj16jTg6NCpRTA8U3dtdE2dYfD3_2GLF9yC2tTu28qpLqX68HFGEyKalakCVUWZGLz2cTPZXWuCdF8FADVzq9YKf-EMQBNhn1ez9jCsynSsNr0I4-_c1098wnkJYBPmAUVQmYVZpmXnjg39KjTAPku7BKtwZvHHoJHFzsLh8KUcg-6MCv1Y-GzR6-Ep5BRRhHAqyq3Pzgvd_Wrj9PmXSRaAQHNu-N4Hf9LO0B4gQv51IHbsB2ZFHWVbSpGKfiUu1-ItbzUjom4YYR_4NzKppykAYrdYIw7FZGFB2PzxXfaf04sacXVZ3yNuuIOaHvjP2aaBjVs7vEg9kpzewuTqhf8YV5k2uxZBKhRxux9Xynz6kpQycGgCIkDKgT3aP7O3FhZyVfVCLGPpfF0Pyn-qzKwEDdhO8xLrs6sONFPrb-CdlqWVpXlw0y9rtiEyp9nzGzvW2BaA8mBkuroWn9Vj1V2hikxSnDvIkkdb-1oCKrL5iMGnO7cUNWSCY-wmctOlOlTMnk0kDCA_yJg1DhNRPRs0WP7BkWj1Nywr-7KA6VeYHOl3cEzkTB-6KD6xRQdhQoo4BAnyNsuu0GBVezdc31aGankdceElN3MY5YD1JMu7SfE7499u9TdFaLddPh3Sjpic73Ug4ocegy_OEUhQhuXFsBPYLLucJlcord1gO31-Kz63i-rzJevo8OpC11meZ8kcSzvgbhp-c4lX4meuXV2NVX0pNcP1MzYmJl7OOnsLKvTGi_YgGMQ8ZAzlb8_Tfb9l3BMXoVsHBQ941aC_aDoLgTZ4LZGWU4aoDzZRWtWOL6xHD_VVTwBx8bD3jNandPrv65TMsIlToQzb8OsLWGjWBNat4LsLFPF_hTUE67D5Uu2BHhQyI4OgU6Rxjl4Zpky4XcF4HTACvAgUPbuBPhwo9hDAKqXE17NvsTIBn_5_Z-N7nw0dc6tHG5prZKks2l4PBm8Tr6aviBmt3vtqGBohPvbcHLQmx5UABP2FwCK27VHYNBIPY4pCj6JyMlDhfReWU9rjo-OCBhW-KM5kmZ_DLriVgLt2gcRu2gVQKhQ3gA-awXKjw6iIX5QNA4JU0LeWgPxEb_odADvRbws2LGXfn_bRGfuXySjRN_WERzQTdPZlGAp2CNz2slAHoVo-HS1uX4Ona6B1dzlh79CBfJCmymOctbHDcMK-qxDQIHAvVC7CKQhkd1qxnxf2b7DXZSVgB308S2Vs26IwSVbMM1az8kMbyZkewcY51Xi3mKQ868MBxUREGsw_6w1OyzvD5irJrPu-O0ZcOUFaBIew29nybjGrtquDOYIfgLkIXs5jYvNKZTOEwPYNwEfgfT5rk2HJVJb0DD7TCvTevXLMJ_fTwZ65pAQ9eGy4YL14NnQXlfbaebrZrUGHntxO8M_XtuwuLcIpDCM_CkO21W6YdqBGkOYmtS9yB813njkmDKKWdppYYnblX2IAkNsfWUpc7sl36KXXiNYIslQrS2Pv6wbxOBRKUKN08sNUyHc3ZpLHajy6sjXIUCwvOfuae2pfOYFxe-3qRoiccadXninCVNDi4jddT2sWmdwArugCjlLeTRsINzm2I1mm0txzjpU-Jjvty1f8CMPQOjOfb_JbravYN510136xzKdqA4yVmTkOgTpuTI56JuzBuYbZlmV6REKufpEhKO4Ynq4EYIRiKSn3Z3msH5oIrXxZF4dlYvkcutOr7-zw1pKS27iKTU1AXDha8r5kP-rGaG7kvD9EW0jhCM7M87jUR-6jOXCQ_lBOC0YYm7nGQgZS5JtvZmm-hfUi8_A5rmjEIOwDA1p_IJOi8PpSOvjoHyvTMeN4x-OWVpOZi4HuTsfzhTvu97USUoUlqq8wkNt6445G3KE3536s4yMmOVDGjA7urH-xC3xTcD6_WMjduJ-EcD0X8a8h-Gx29SFpJffyOkEqs6LTD5Y7cbUDksk1Qdu2OnxZHk_6vG-quFAy2YIFtQTMIOfgbOs5uWMzy7shYaoxc24ipwGy3xW478gIpxMCBUkPu52zIh1ABmU2DogbaVOmW6l2TkrXaP_xdKSDj2z0zDhinHL9Ni1_LKHVFbnJThO7LDnEb_PwPbshCwSKOWH3Yh17cgZuA08a9mllmq2VNW0gJtBneqT3XVtElvXkoMocBCkiKwssEgXDfBGhYd0QiW9bUssWT8GM34-NAdmDTzq83G9TKV5ijba6R2XcaBBGqF-_ZTNGIYGiAdZyGgFLNk8PPtaE5Y_18OWTmqlW5Rl6S3UCMb7-oqYGFwH-qCsBHjcuAXt9Wl_MBaVmVvYSFGRqkXUFHtlwVMT6m5kA76KCTODmDuZnIXfxR8R8BSqTnkA1ei3sgQAdODkzUGq59V_dL9BCGhTz5KC3sHDvlSOMxaiYMRO8HSB59dHz1ORfWfJImssLd0y1VEOxdjKhfgtVwG14_c3uiesmpwSfLmJnGM04kcfhoowoWLmP-V0gAEKMNMPLjmb2lgAv0j_BQcP4M36jk2vqwXcBNNoXKHY3xBQSvjFHpovz8G9_rVdU71ROSr1kfnta__0VLX0v9-H7OSqSbUfSDTjFB-3uDYkl8duqFR4F6B3BWb3qjN4_zO6e6tBw3QqQDiO-3_Z51p40uM9iTFQzmBez4NLBlJs9be3SRaHjjpOMvvEc9k-F1zMSNdDp2rfiBowh94sYXefchw3M0evCzaWqfygMLzWSCLvqiWXw6Md2H2xRtEFfXrEll9-cF_Zv87nFd8VA1rGavonHJJP3it50Glzew2iMuBF2oUXErCZD8jb4Hr2kL-z6vNiWtuyj-4khmEX3QiGAG2ad0-cBhiJG2mXrRpwuaQr7Y5FCLWpP2Gu9HZC0jog5cKK66OsNzvi_Vp__LufPQNyRiKh4O4DPjHQiQ-Kqz-VSVBgLGZ2XcR7gGPg3Wtz8Rse-LoKyl181uAU8TSRW9nunptIGBDTahH8pM8ktzV1TEchM2Grqa8pu9C-xnZ4sd1Yju9a4cw4wR9u0FjnqMxLtUcoJ6Ch1Q7_SyKmTUF4JoXEe9LmBfindtpNOqZw4x6P1ljhgcIVZtLRGRMahUndWnBWZcGPa8mvyJ-wNAHvbtOGjsFIce_r4HAzQnJpWBcagqv-J6X1ei4-PaFPo4UKoQBR18Qq_YFXdYz7kZhs3C-x-8qxOWYpb71przXVNalC8o6_kO2kJqrr4m7ncFm5O4Bt0wyjndK054bsPFy8oeNbZBoEoQnDL3CrtOjbUe22LPEQOtQuMVhhEQXlXEX6pQP9INmnH_TL4yyTV7KmNBBvo104uCiyMUIfcaUuCUTNQKt8uGq1r5QIHs1GsQ30BIerawgaiFcFYP5VDFhlwoYUqHy8lnRi7QX0MNG4GuN7hLal0rS7F7AkUPauxeHKWg0rAGPX_Itlm1fGGi6-eFt4fGrwxfpQIwR5HJ3VkOBRRzl8cCVBe04rrwHKzjy6KHF1CeUKvQWsBt6RwXN9q2xWZBFiuoJ4KEPnjQvaxiFJvxF-haOwuP7lkru3h3iXuPPaDaoS4ERDDkZkGnpsXGEa59_DIVwrhaa78wQGURun57qzRkU-V3EYCoIBvpY1NUseUyXuyTjmz3CKbjPL1L--XJL8vl0dTRZVL92sH8kmThB8Lvpxdi3NQc21u-fNZ6zCxDh0VX1VBSpH6fwWoCN2n2YDpR_stLEcbuT9iPSSHom8SJHZ59vqvhsKyjoaWYnqYLCAW3F77zFegWN-9o8zZKcDnnFohI1UsQqEiUwp71vWsO0tJfQieOzSHqI-9OYZtjHn5q2FfpQTq574z-9HRqLilkhdsHP0NaR7UhgJjaHY5KZMlNtxWCt1DZloRTpmdQ2Lv7eNWGUN6jehCE7E3HHNCY2C9BYjElCBCz9eea3Gs0-WT01Y5ffNGX5eBD_OE91G0Vxt7J969_3YoGn_uUA8RNSUgcalCxjRNjd9wa7EYSVCBbZZYBcBCWbZEkxWzbBgmmZNepMmhXpkoahBq7Sn4w7kifGnWtqwNWh8HWEHA5NBK1ZlZrHI8nrFkKDg09z-dVfg3PNkmdJjSVwB547gn5LDUV4uD6GkDnJvUxjwKEsla6kg6cG1jNSExMnVjSkH_8PJt7-CS7YgKI7Tc4YaFxAZ3FzzxqEYP6jPd2VznBzoSpt0oGABCwc6nkFzhyT3ediHF0KeHAdj8gmq2qGNYCOOwT3bKoehsXfuhj70MoQJD6mG21FVOMIH8cJPyPdswQbENaub3iInFVTuLuglR_bDlOo9jgJfaB6LuHnUZqjWUOaYKpk0WWX-vL228eMZXmS7pGBZ6VjkSSDH2nKFh1HWGw-FEtlkTPwd3VSs8ONPNox-esiV0SF6Lfq6P9EAs4tBzVVdwWZHTwOCBPsGhR8XloLxdnBByhr2LyA1pxyLmYIiAsivYdWO5QtucG_jHMo_reD2Fmsd4YAslH0Gw-RcQgr49TELa3W_ID9w06c9paYruNRwfYlbR6cqdWw55HjaGFntiau5LIkxz_IpHLOmNyijYgMxILg0vbhjAKLcXuQLLhV9Jocil5m1CfRYtuk9jZQJqDBTwiakfJGEEU56aZNyjFC3Cmheu1dlu1gTsM0CEakQrB2Ibhx3efAQHkl4HecDNAVtkVNNIl9JyBh8xPMQjf3p3LvtA_2wTdWpVsvRm-LLqMsd8eLBk2aelYxEhY_ttl_gTn81MKihZsO8QJWSIi6G-BS-lbxrcNMZcH6PMrSuB7nV0oWWzT8ZtMhfXUToYpFZRnqN8tmFvPGEUtufA3Q9Jf6LdRrWDyNzoDbSqfzA6S6lfgjj1n1m306-AfZN8amHN-ytE8dn8gGy7XWsN-TY7gLHhCH1e9PNXgiAgTBXOyPO2BKK9UGY0xPMvAXiIOwDEtAm0L22Ev77Hge0nDI4srIMVPwmz8pxgDVgioCosXu-dvLaXOB7a3tCBUPcanU3S_gNP6ubSiJsnS5Fpm9S8Pkv9gGHcx1QuqDYvlbrfmCMTPukssLtPrEnt5rTttfp9ZkujD-kQsGMM-vSkr1QJhJ_ENhkvyug1MesmrSUfizkP0t7wt-1DlmHdgFsaMZhZLJH2u8Q1hakYeNxc3LOWvrJmbZ66aO728MOq49lyoWelAW0LBfh2xYH7lSM0yEukNy2JXBthL_gDPEUyjUbw_1IoN5SjQs5dx0XB-BHbl_9Jh0v4eU9_07MrV-NN-7x2EEJzu-NPWiH3hCjBndkTvV_xtBQ822Vb6HU9PZCYEc2pBOFn5QuWZehqa2Sbx8Q4QD_DhDVW2RQc7TPZixenO1Ihq4FmfMVcJqSDYdlmaVgDT8K5mys4ZCM1uJkyJwc_ZXfitimnnzorv_5jsF-Cl2hCchiF67Xpcs7vlWtwY9OZhf_G0jExba7LXGoujHQF2ewlGayuzwh8-AUWF__14ncTTWlb2emJgsa7bt4sBj0ri8CiEu5HWjbSvZh1_XI2n8JQQAI5IHnNKdpqmhT2oFsSQIqE_5G5_ThJEpY0OeMHBr4Bckwo9LfnAP_c9_yboYGGYomrnSGHnXd2Vwfa8UuExpW-U39YbrRUu97IdUYpgWEy--ynWHr6_JtXm9odHRtQlXugK9LXL4gsBNu8gPxHMmGiVqeS45R683ihwF5Iz_ktBRWGkdmXt8AZzPMt1QUsKTCJuEV7SbhdmEBp4kBOj94QE2eu05RPt3m_0SXgOO1RjU6bjOpydO4ym1SvvD48NgNZFoORpyvK0ml5oi6j0JUGlQvIxQhl0o4iRd6-fFtmE6JPTHFr8pz10bfbb7Q2r22g3MamzViq_FCvi6nISLJpRvACJzeTWcgf6Ryq0fcW7zoNu9dT8KwSZBwjvbn6OF3aTP6t65D98bGXYxBfBhMnmoqnyCcxLlzw-yrme5e9kpCgFddIXufF_m16FFrIBCOosJbVjScW9t2fKlHpt5T8McSJ7RWCkO9JF3IFaqoxt3ozfFjgLYGo91JKSPe388eFI8O77F440eg9QIPtikFiXL5aQGwDBYLrCuk5f88UwbRvGz4p_A9Dwn6Uedx5JDawoaUmF9JjdpLUkXncanKTygOkTK8EHg2XEIgF7Z_0We7iBGx7sLzMAfjzNDgaDk4QInbjBCRMZQdeRAVqis5FL5FFcrpTQqIoDY3T18RAukguzfRo93GLgiexbyZpbYUWU5J8yh4Mhipgpde5xz9ZM6JKK39IleX057burn1ZyvfVLY9CZCBWFF3JlIMTFG4xgJ_3ucn59_7IV4-bJuDV0Z0eyyHb1Vqif-2P4tY-F4UQCmUu5zKAan6ELNpops9GNCEJkF2v1dK9mS-dmTMlMDYNadGzsnHSR-8xfPftFKvweSD1-ISzb-vS86el4GfhN_vteAsbx6vpuK1iK3NqRRggeWqsVHghZrYvLxlwpHjYAaxcjlNMjSPV6ARu1ckX4HRCYamYb45wbLyRwgfhl9cH2UdvEslFXV0hHedfm-xCr5-sOznMqoCQoeM0RYmY6cieUKFGN1wmQuef41nfGcN3K3re26IskRwn-qXtQeOqluUobRLlxAy4990ESDD5yqOC4rafxK4hSiHnmy3VSe7mjHGe1Vg6l4EX9DAOtKnc56NIHj3n_BkALxnaosTbxAyGxR-BJGxullrggHVoWLrEq-8jqrXJ39TO-yeNk6JNu3uL2bedXCZdRrMxfnYf4C4ieC4ephLzxJstRGBO2oSmInn9vSz10rESLstWAdiWJLvzgkkSN15ktzwmDJBqogP3U5KL_vqt6Pdnff1hhC-uinQl-sipsgcsqCLbTc0V2fNi3Fx_X6k07Q_jx30S8bOLgNRZvHFB-u7ONQJ21G5V22Y44lCgUUDDJ1d320kLHiRVPF6EjnuwrT-SODdviUXClTL8tOloazP8XftwOJgX7KPANact1Ubqo_Ru9akH0StP7zTQCOycwc37NceWS_GqiqgHFuZHIweZhSAOgShRS8nJmXzQpsocRYe4K0tX_-sEexsgdLRo6lTi2UzVIgL0_sP27jynQ9gVOzoBusli_qTAhvBQTfCao-nZwF4i0sW-qV8nvgH9S0yhIYsapvPrNbgpDSARxpEGJGp77AlV8AY3MGyzT11J4ljL75308HF0XTzBBzz2we5Uyh0UtkA16wUQddtDvDKy-6N77gD1B_gfBdWyfFic5gYctUThKWZ4xvfHdQFBH-FkleiRFMgTcvVnBbeQ8qIkbv7Lastf7HDKFigOYAi1Vo4lox8SuURPwtmA4Ytb7pz0THgmTLkBqtIHRudVu6HA0mNA1I4KeBd-Vqsfq888uX2dqRJWucJLmO2cVeTQPic3Uj6sDs9IelUdCW8Js0hx5JCMuK8XFeascOVRUFuSkIfGNkq3DZuoJCKsZ0UJtfrE0Sl7R8fDjOu0X9Z9YopFgo3Jo7lRetG8xtePzRgDsQge0TCo_ADpylSs4G3aqBIyirabti2MYfeXFCab9mWaFF2SRZzAW0-cye8u4MlUzq2w2_2v5kOPGWdYlfGfBxE0PIzaT-Fu7O5K3uywOcEaPAm9P3eCDErxYkXJzDskiPqc_vpVN1Beye_LYlXAMRP95Xofsts2jxPcoCrr9h9AJM2-Dlcpt23YV55cQ1YmuCz9HYG1qLJm1V0GfQAHooom3QncBcMRa0pxDDqR4S_Sr2AKZhRre06O3OOUZsTtI1D4YSCf8Otb12_zvf5RP6UQaEMpLXcQxqDhtLFkqdVhsjH7gEP7AQxGZRDTzsFRhfTAQQ_C3vXStl8_9LkoC3oM1BcqMriLK6nmAbcehESMvAHPBNsTkL2qWvQDoUr4026VR6cY_j4HYN6WwYgg3GQF2r_xLv5WQW4zWJaYPFawXpU8_jjOCQ1Nqx4APQDO5PHiCoI6X7TeK0AQT5OJXG8t--iovmQCdwUXNOdThxVICAxWJRwFibq06sdOSSXnct0ZQ-pppRq5nmBiGASXweDnSs2K-rw0_OCz_7wtpkAASP07eOOXzQETiX6SkVV3_yy20D_h64JZ93V5qpTZCah1iqrPJL4-QI_hvEzNbbEiBsfi8bvT0Dj129cRwi3IxsgYP7q4aw3paBEGfCZtEBkvZVymTRg5BdVAeYJhijTV3mnnL3Ds--Ev0-Ilq96v1DUULw3c_GmmA9_MTIj4EH5hta9Hf8l-fjFh7Y6NhaJiI4qZMbH_kpZVln5FE3G3rqA7z2UmX2V13z2OWFSsssN-nGpkOI5XLVHetVg6NF4g6WN7vR1FmkzQUrafmNGFkVwlJsJkiJAcxo2yCiWV0GUVexzAAyG0jG8-mtyiITzR4LSZcMLHag1s18ShdU7LEMiHbBX4eLjth9Cdm0VABtkUQZVT8X16Qz2BtW4DdRYbNgCJ6NnM49KSJSTD8kP4IYHxnx3rWBz5STP6CjszS0-f5AyzXVMAshBtKyhXc3EC6pLjEYKDUgARxGe02yPC07aDplmChO7ouB1nJc8ZTjecWT5C3nrYk1ucqztwg9UZF_hEC-Km0IaKg'};</script>
+<script src="../decrypt.js"></script>
+</main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../top.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="../official/application.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../top.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="../official/application.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../mark-09e88c2c.min.js"></script>
+        <script src="../searcher-c2a407aa.js"></script>
+
+        <script src="../clipboard-1626706a.min.js"></script>
+        <script src="../highlight-abc7f01d.js"></script>
+        <script src="../book-a0b12cfe.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>
